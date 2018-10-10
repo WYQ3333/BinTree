@@ -102,3 +102,16 @@ int GetLeafBTnodCount(pBinTree pRoot)//获取叶子节点的个数
 	}
 	return GetLeafBTnodCount(pRoot->Lchild) + GetLeafBTnodCount(pRoot->Rchild);
 }
+
+int GetBTNnodeHeight(pBinTree pRoot)
+{
+	if (pRoot == NULL)
+	{
+		return 0;
+	}
+	int LeftHight = 0;
+	int RightHight = 0;
+	LeftHight = GetBTNnodeHeight(pRoot->Lchild);
+	RightHight = GetBTNnodeHeight(pRoot->Rchild);
+	return LeftHight > RightHight ? LeftHight+1 : RightHight+1;
+}

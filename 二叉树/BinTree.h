@@ -24,3 +24,4 @@ pBinTree CopyBTNode(pBinTree *pRoot);//拷贝二叉树
 void PrintBinTree(pBinTree pRoot);//打印二叉树
 int GetBinTreeNodeCount(pBinTree pRoot);//获取二叉树结点个数
 int GetLeafBTnodCount(pBinTree pRoot);//获取叶子节点的个数
+int GetBTNnodeHeight(pBinTree pRoot);//获取二叉树的高度
